@@ -1,0 +1,195 @@
+@font-face {
+    font-family: "Space";
+    src: url("css/fonts/space-quest-font/SpaceQuest-yOY3.ttf");
+  }
+  
+  @font-face {
+    font-family: "SpaceTilt";
+    src: url("css/fonts/space-quest-font/SpaceQuestItalic-g8jY.ttf");
+  }
+  
+  @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&display=swap');
+  
+  @import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+  
+  body {
+    margin: 0 auto;
+    height: 100%;
+    padding: 5em;
+    background: url("bg.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    font-family: 'Space Grotesk', sans-serif;
+  }
+  
+  ol, ul {
+    text-decoration: none;
+    list-style: none;
+  }
+  
+  li {
+    margin-top: 10px !important;
+  }
+  
+  .board-row:after {
+    clear: both;
+    content: "";
+    display: table;
+  }
+  
+  .square {
+    background: #fff;
+    border: 3px solid rgb(103, 27, 243);
+    border-radius: 1px 1px 1px 1px;
+    float: left;
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 34px;
+    margin-right: -1px;
+    margin-top: -1px;
+    padding: 0;
+    text-align: center;
+    width: 100px;
+    height: 100px;
+  
+    &:focus {
+      outline: none;
+      transform: scale(1);
+      animation: pulse-black 2s infinite;
+    }
+  }
+  
+  @keyframes pulse-black {
+    0% {
+      transform: scale(0.95);
+      box-shadow: 0 0 0 0 rgba(167, 151, 255, 0.7);
+    }
+  
+    70% {
+      transform: scale(1);
+      box-shadow: 0 0 0 10px rgba(167, 151, 255, 0.7);
+    }
+  
+    100% {
+      transform: scale(0.95);
+      box-shadow: 0 0 0 0 rgba(167, 151, 255, 0.7);
+    }
+  }
+  
+  .kbd-navigation .square:focus {
+    background: #ddd;
+  }
+  
+  .game {
+    display: flex;
+    flex-direction: row;
+    background-color: rgba(64, 9, 167, 0.048);
+    padding: 100px;
+    border-radius: 10px 10px;
+  }
+  
+  .game-board {
+    .square {
+      color: rgb(63, 63, 60);
+      text-shadow: 2px 2px rgb(148, 214, 198);
+      font-size: 30px;
+      font-family: 'Fredoka One', cursive;
+    }
+  
+    margin-left: 200px;
+  }
+  
+  .game-info {
+    padding: 20px 20px 0px 20px;
+    text-align: center;
+    color: #ffffff;
+    border: 3px solid rgba(255, 255, 255, 0.918);
+    background: rgb(103, 27, 243);
+    min-height: 300px;
+  }
+  
+  .game-status {
+    font-family: 'Space';
+    font-size: 30px;
+    color: #ffffff;
+    background: rgb(103, 27, 243);
+  }
+  
+  .game-moves {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 100%;
+    font-family: 'Space Grotesk', sans-serif;
+  }
+  
+  .btn-prim {
+    background: rgb(214, 255, 245) !important;
+    color: #131313 !important;
+    font-weight: 500 !important;
+    font-size: 17px !important;
+    border: 3px solid rgb(38, 38, 39) !important;
+  
+    &:focus {
+      outline: none !important;
+    }
+  }
+  
+  .game-title {
+    font-family: 'Space';
+    font-size: 75px;
+    text-align: center;
+    color: #ffffff;
+    outline-style: solid;
+    background: rgb(103, 27, 243);
+  }
+  
+  .pre-title {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 33px;
+    text-align: center;
+    color: rgb(248, 224, 118);
+    letter-spacing: 3px;
+    line-height: 1.6;
+    font-weight: 900;
+    text-shadow: 3px 3px 3px rgba(74, 22, 196, 0.945);
+  }
+  
+  .game-space {
+    margin-top: 70px !important;
+    margin-bottom: -20px;
+  }
+  
+  @media only screen and (max-width: 700px) {
+    body {
+      background-size: cover;
+      padding: 1;
+      margin: 0 auto;
+    }
+  
+    .square {
+      width: 50px;
+      height: 50px;
+    }
+  
+    .game {
+      display: block;
+      padding: 1;
+    }
+  
+    .game-info {
+      height: 100%;
+      padding: 1em;
+      width: auto;
+    }
+  
+    .game-status, .game-moves {
+      height: 100%;
+      padding: 1em;
+    }
+  
+    .game-board {
+      margin-left: 30px;
+      padding-bottom: 80px;
+      margin-top: -50px;
+    }
+  }
