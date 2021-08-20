@@ -8,6 +8,9 @@ Day one (1) of trying to code in React on my own was a success. I completed it w
 #### FUTURE NOTE: 
 Custom player names instead of 'X' and 'O', and the ability to play against the computer instead are all functions that I will implement at a later stage once I have more time and understanding.
 
+## Video Preview
+https://user-images.githubusercontent.com/87696858/130235578-a0c7ce28-aa96-4732-9392-1518a277f72d.mp4
+
 ## My Version UI
 ![screencapture-localhost-3000-2021-08-17-19_28_24](https://user-images.githubusercontent.com/87696858/129773247-dc08be32-9726-4655-9e61-4ade9396db54.png)
 
