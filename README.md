@@ -8,6 +8,10 @@ Day one (1) of trying to code in React on my own was a success. I completed it w
 #### FUTURE NOTE: 
 Custom player names instead of 'X' and 'O', and the ability to play against the computer instead are all functions that I will implement at a later stage once I have more time and understanding.
 
+## 💣 Play Via Demo Link  💣 ## 
+[Tic Tac React Game](tic-tac-react-christine.herokuapp.com/)
+#### **Please note that if the app does not load or gives an error, just reload the page and Heroku will work again. Sorry for any inconveniece :) ####
+
 ## Video Preview
 https://user-images.githubusercontent.com/87696858/130235578-a0c7ce28-aa96-4732-9392-1518a277f72d.mp4
 
